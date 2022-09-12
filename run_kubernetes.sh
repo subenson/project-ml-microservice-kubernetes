@@ -2,17 +2,16 @@
 
 # This tags and uploads an image to Docker Hub
 
-# Step 1:
-# This is your Docker ID/path
-# dockerpath=<>
+project=project-ml
+echo "Project: $project"
 
-# Step 2
-# Run the Docker Hub container with kubernetes
+dockerpath=svendenotter/$project:v1.0.0
+echo "Docker ID and Image: $dockerpath"
 
+kubectl run $project --image=$dockerpath --port=80 --labels app=$project
 
-# Step 3:
-# List kubernetes pods
+kubectl wait --for=condition=Ready pod/$project
 
-# Step 4:
-# Forward the container port to a host
+kubectl get pods
 
+kubectl port-forward $project 8000:80
