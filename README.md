@@ -2,7 +2,7 @@
 
 ## Project ML
 
-Project ML predicts ousing prices in Boston according to several features, such as average rooms in a home and data about highway access, teacher-to-pupil ratios, and so on using a pre-trained `sklearn` model.
+Project ML predicts housing prices in Boston according to several features, such as average rooms in a home and data about highway access, teacher-to-pupil ratios, and so on. The predictions are made using a pre-trained `sklearn` model.
 
 ---
 
