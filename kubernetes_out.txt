@@ -1,0 +1,23 @@
+# run_kubernetes.sh
+
+Project: project-ml
+Docker ID and Image: svendenotter/project-ml:v1.0.0
+pod/project-ml created
+pod/project-ml condition met
+NAME                                 READY   STATUS    RESTARTS      AGE
+project-ml                           1/1     Running   0             1s
+python-helloworld-555dccdb6b-8h97g   1/1     Running   2 (79m ago)   22h
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+
+===
+
+# make_predictions.sh
+
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
